@@ -1,0 +1,78 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  background: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  box-shadow: 0 2px 6px rgba(3, 71, 54, 0.1);
+  z-index: 100;
+}
+
+/* Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #04584d; 
+  font-weight: bold;
+}
+
+/* Botão CTA */
+.btn {
+  background: #04584d;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #04584d;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+/* X → deslocamento horizontal (para a direita se positivo, para a esquerda se negativo)
+   Y → deslocamento vertical (para baixo se positivo, para cima se negativo)*/
+body {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  position: relative;  /*boa prática*/    
+}
+
+h1 {
+  font-size: 3rem;
+  transform: translate(-300px, -50px); 
+}
