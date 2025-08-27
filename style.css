@@ -15,12 +15,12 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 15px 60px;
-  background: white;
+  background: #11172a;
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
-  box-shadow: 0 2px 6px rgba(3, 71, 54, 0.1);
+  box-shadow: 0 2px 6px hsla(189, 76%, 10%, 0.87)
   z-index: 100;
 }
 
@@ -33,21 +33,21 @@ body {
 
 .nav-links a {
   text-decoration: none;
-  color: #555;
+  color: #e6e6e6;
   font-weight: 500;
   transition: color 0.3s;
 }
 
 .nav-links a:hover,
 .nav-links a.active {
-  color: #04584d; 
+  color: #599692; 
   font-weight: bold;
 }
 
 /* Botão CTA */
 .btn {
-  background: #04584d;
-  color: white;
+  background: #599692;
+  color: rgb(8, 88, 78);
   padding: 10px 20px;
   border-radius: 20px;
   text-decoration: none;
@@ -56,7 +56,7 @@ body {
 }
 
 .btn:hover {
-  background: #04584d;
+  background: #599692;
 }
 
 html, body {
