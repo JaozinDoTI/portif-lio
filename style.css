@@ -1,3 +1,7 @@
+body{
+  background-color: #161f1e;
+}
+
 /* Reset básico */
 * {
   margin: 0;
@@ -6,7 +10,7 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family:'Press Start 2P', 'Pixelify Sans', 'VT323', 'Courier New', monospace;
 }
 
 /* Navbar */
@@ -20,21 +24,21 @@ body {
   width: 100%;
   top: 0;
   left: 0;
-  box-shadow: 0 2px 6px hsla(189, 76%, 10%, 0.87)
-  z-index: 100;
+  box-shadow: 0 2px 6px hsla(0, 0%, 100%, 0.87)
+  z-index 100;
 }
 
 /* Links */
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 25px;
+  gap: 20px;
 }
 
 .nav-links a {
   text-decoration: none;
   color: #e6e6e6;
-  font-weight: 500;
+  font-weight: 200px;
   transition: color 0.3s;
 }
 
@@ -66,13 +70,42 @@ html, body {
 /* X → deslocamento horizontal (para a direita se positivo, para a esquerda se negativo)
    Y → deslocamento vertical (para baixo se positivo, para cima se negativo)*/
 body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   display: flex;
   justify-content: center; 
   align-items: center;     
   position: relative;  /*boa prática*/    
 }
 
-h1 {
-  font-size: 3rem;
-  transform: translate(-300px, -50px); 
+header.h1 {
+  font-size: 120%;
+  margin-top: 50px;
+  color: #eaf4fd;
+  transform:  translate(-350px, -50px);
+}
+
+header.h1 h1 {
+  line-height: 1.2;
+}
+
+.skills-bar {
+  font-style: italic;
+  font-weight: 900;
+  display: flex;
+  width: 100%;
+  background-color: #1b1f1f;
+  color: rgb(73, 73, 73);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  font-family: Arial, sans-serif;
+}
+
+.skills-bar span {
+  flex: 1;                  /* cada span ocupa o mesmo espaço */
+  text-align: center;        /* centraliza o texto dentro do span */
+  padding: 10px 0;           /* espaço vertical */
 }
